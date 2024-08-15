@@ -1,63 +1,57 @@
 .banner {
+  display: flex;
+  align-items: center;
+  justify-content: left;
   background-size: cover;
   background-position: bottom;
-  padding: 150px 0;
-  opacity: 1;
+  padding: 150px 150px;
   margin: 6px;
   border-radius: 3px;
 }
 
 .banner h1 {
-  margin: 0;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 38px;
   font-weight: bold;
   padding: 0 20px 0 100px;
   align-items: left;
 }
 
 .banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   padding: 0 20px 0 100px;
   align-items: left;
 }
 
-.btn-ghost {
-  color: #700d0d;
-  border: 2px solid #700d0d;
-  padding: 8px 24px;
+.overlay-button-container {
+  position: absolute;
+  top: 67.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: white;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 4px 18px;
   border-radius: 50px;
   transition: opacity 0.3s ease;
-  margin: 2px;
-  background-color: #e7d9ba;
+  background-color: white;
 }
 
-.btn-ghost:hover {
-  opacity: 1;
-  border: 2px dotted #b12828;
-  color: #b12828;
-  background-color: #e4d7bc;
+.overlay-button-container:hover {
+  opacity: 0.4;
+  color: rgb(54, 6, 6);
 }
 
-.btn-ghost2 {
-  color: #700d0d;
-  border: 2px white;
-  padding: 2px 12px;
-  border-radius: 50px;
-  transition: opacity 0.3s ease;
-  margin: 2px;
-  background-color: #e7d9ba;
-}
-
-.btn-ghost2:hover {
-  opacity: 1;
-  border: 2px solid white;
-  color: #b12828;
-  background-color: #e4d7bc;
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .card-trip {
@@ -67,12 +61,14 @@
   width: 350px;
   height: 300px;
   border-radius: 3px;
-  margin: 6px;
+  margin: 8px;
 }
 
 .card-trip > img {
   height:250px;
   width: 100%;
+  object-fit: cover;
+  padding: 10px 10px;
 }
 
 .card-trip h2 {
@@ -86,7 +82,6 @@
   opacity: .7;
   margin: 0;
 }
-
 
 .card-trip .card-trip-infos {
   padding: 16px;

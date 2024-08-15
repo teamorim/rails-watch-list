@@ -1,30 +1,27 @@
 <div>
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn.pixabay.com/photo/2019/11/07/20/48/cinema-4609877_1280.jpg);">
-      <div class = "d-flex align-right">
-        <a class="btn btn-ghost2" href="#">Sign In</a>
-      </div>
+  <div class="banner" style="position: relative; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn.pixabay.com/photo/2019/11/07/20/48/cinema-4609877_1280.jpg);">
       <div class = "text-left">
         <h1>Show Time!</h1>
         <p>All your favourite movies, one click</p>
       </div>
   </div>
 
-  <div class = "d-flex justify-content-center">
-    <a class="btn btn-ghost" href="#">Create your list</a>
+  <div class="overlay-button-container">
+    <a class="btn" href="#">Create a movies list</a>
   </div>
 
-  </div>
+  <div class="cards-container">
     <% @lists.each do |list| %>
       <div class="card-trip">
         <img src="https://wallpapercave.com/wp/wp9991397.jpg" />
         <div class="card-trip-infos">
-        <div class = "d-flex justify-content-center">
-          <h2 class = "mx-4">Drama</h2>
-          <p>Who doesn't like a good one?</p>
+          <div class="d-flex justify-content-center">
+            <h2 class="mx-4">Drama</h2>
+            <p>Who doesn't like a good one?</p>
+          </div>
         </div>
+        <%= list.name %>
       </div>
-      </div>
-        <% list.name %>
-      <% end  %>
+    <% end %>
   </div>
 </div>
