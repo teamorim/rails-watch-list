@@ -3,6 +3,8 @@
   background-position: bottom;
   padding: 150px 0;
   opacity: 1;
+  margin: 6px;
+  border-radius: 3px;
 }
 
 .banner h1 {
@@ -30,25 +32,47 @@
   padding: 8px 24px;
   border-radius: 50px;
   transition: opacity 0.3s ease;
-  margin: 10px;
+  margin: 2px;
+  background-color: #e7d9ba;
 }
 
 .btn-ghost:hover {
   opacity: 1;
   border: 2px dotted #b12828;
   color: #b12828;
+  background-color: #e4d7bc;
+}
+
+.btn-ghost2 {
+  color: #700d0d;
+  border: 2px white;
+  padding: 2px 12px;
+  border-radius: 50px;
+  transition: opacity 0.3s ease;
+  margin: 2px;
+  background-color: #e7d9ba;
+}
+
+.btn-ghost2:hover {
+  opacity: 1;
+  border: 2px solid white;
+  color: #b12828;
+  background-color: #e4d7bc;
 }
 
 .card-trip {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 350px;
+  height: 300px;
+  border-radius: 3px;
+  margin: 6px;
 }
 
 .card-trip > img {
-  height: 150px;
-  width: 25%;
-  object-fit: cover;
+  height:250px;
+  width: 100%;
 }
 
 .card-trip h2 {
